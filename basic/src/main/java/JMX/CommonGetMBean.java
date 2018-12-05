@@ -6,6 +6,7 @@ import javax.management.MBeanServerConnection;
 import javax.management.MBeanServerInvocationHandler;
 import javax.management.ObjectInstance;
 import javax.management.ObjectName;
+import javax.management.modelmbean.ModelMBean;
 import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
 import javax.management.remote.JMXServiceURL;
@@ -75,7 +76,7 @@ public class CommonGetMBean {
             }
         }
 
-        return null;
+        return ModelMBean.class;
     }
 
 
