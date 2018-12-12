@@ -13,8 +13,24 @@ public class Test {
         resolver.setExpressionSuffix("}");
         resolver.setExpressionParser(new SpelExpressionParser());
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-        factory.registerSingleton("user", "张三");
-        Object value = resolver.evaluate("${ user }", new BeanExpressionContext(factory, null));
+        factory.registerSingleton("user", new Student("张三"));
+        Object value = resolver.evaluate("${ user.name }", new BeanExpressionContext(factory, null));
         System.out.println(value);
+    }
+
+    static class Student{
+        private String name;
+
+        public Student(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
