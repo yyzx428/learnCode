@@ -84,13 +84,13 @@ public class FluxTest {
                 .subscribe(System.out::println);*/
 
       /*  Flux.create(sink -> {
-            sink.next(Thread.currentThread().getName());
+            sink.next(jdkUse.Thread.currentThread().getName());
             sink.complete();
         })
                 .publishOn(Schedulers.single())
-                .map(x -> String.format("[%s] %s", Thread.currentThread().getName(), x))
+                .map(x -> String.format("[%s] %s", jdkUse.Thread.currentThread().getName(), x))
                 .publishOn(Schedulers.elastic())
-                .map(x -> String.format("[%s] %s", Thread.currentThread().getName(), x))
+                .map(x -> String.format("[%s] %s", jdkUse.Thread.currentThread().getName(), x))
                 .subscribeOn(Schedulers.parallel())
                 .toStream()
                 .forEach(System.out::println);
@@ -105,7 +105,7 @@ public class FluxTest {
 
         Flux.range(1, 10000)
                 .publishOn(Schedulers.single())
-                .map(x -> String.format("[%s] %s", Thread.currentThread().getName(), x))
+                .map(x -> String.format("[%s] %s", jdkUse.Thread.currentThread().getName(), x))
                 .toStream().forEach(System.out::println);*/
 
         Flux.range(1, 10)
