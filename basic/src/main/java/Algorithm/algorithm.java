@@ -1,17 +1,11 @@
 package Algorithm;
 
-import org.springframework.core.BridgeMethodResolver;
-import org.springframework.util.ReflectionUtils;
-
-import java.lang.reflect.Method;
 import java.sql.Driver;
 import java.sql.DriverManager;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.stream.Stream;
 
 public class algorithm {
     public static ReentrantLock lock = new ReentrantLock();
@@ -31,7 +25,7 @@ public class algorithm {
                 Stream.of(method1.getReturnType()).forEach(System.out::println);
             }
         });*/
-        List list=Arrays.asList(1,1,11,1,1);
+        List list = Arrays.asList(1, 1, 11, 1, 1);
         list.remove(1);
     }
 

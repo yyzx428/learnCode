@@ -1,4 +1,4 @@
-package frameworkUse.Spring.StandardBeanExpressionResolver.SimpleExpression;
+package beans.standardBeanExpressionResolver.SimpleExpression;
 
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;

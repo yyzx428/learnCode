@@ -1,4 +1,4 @@
-package frameworkUse.Spring.Reflection.BeanWrapperImpl;
+package beans.reflection.BeanWrapperImpl;
 
 import org.springframework.beans.BeanWrapperImpl;
 

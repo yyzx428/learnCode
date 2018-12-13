@@ -1,4 +1,4 @@
-package frameworkUse.Spring.StandardBeanExpressionResolver;
+package beans.standardBeanExpressionResolver;
 
 
 import org.springframework.beans.factory.config.BeanExpressionContext;

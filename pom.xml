@@ -14,6 +14,8 @@
         <module>interface</module>
         <module>LogPrinter</module>
         <module>SystemPrinter</module>
+        <module>SpringFunctionUse</module>
+        <module>SpringBootFunctionUse</module>
     </modules>
 
 

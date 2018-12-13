@@ -1,4 +1,4 @@
-package frameworkUse.Spring.ConversionServiceUse;
+package beans.conversionServiceUse;
 
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.format.annotation.DateTimeFormat;
