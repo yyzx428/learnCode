@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;
 
-public class CycleEntity implements InitializingBean,SmartInitializingSingleton {
+public class CycleEntity implements InitializingBean, SmartInitializingSingleton {
     @Autowired
     private CycleEntity cycleEntity;
     private String name;
@@ -16,7 +16,7 @@ public class CycleEntity implements InitializingBean,SmartInitializingSingleton 
     }
 
     @PostConstruct
-    public void after(){
+    public void after() {
         System.out.println("CycleEntity初始化完成----1");
     }
 
