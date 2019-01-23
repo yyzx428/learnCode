@@ -44,13 +44,6 @@
             <artifactId>ehcache</artifactId>
             <version>2.10.5</version>
         </dependency>
-
-        <dependency>
-            <groupId>javax.naming</groupId>
-            <artifactId>jndi</artifactId>
-            <version>1.2.1</version>
-        </dependency>
-
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>

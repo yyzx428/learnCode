@@ -17,7 +17,7 @@ public class JndiDemo {
         LocateRegistry.createRegistry(1099);
         //注册jndi方法
         Properties enc = new Properties();
-        enc.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jdkUse.jndi.rmi.registry.RegistryContextFactory");
+        enc.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.rmi.registry.RegistryContextFactory");
         enc.setProperty(Context.PROVIDER_URL, "rmi://localhost:1099");
         JndiTemplate jndiTemplate = new JndiTemplate(enc);
         try {
