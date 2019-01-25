@@ -25,7 +25,6 @@ public class Client {
                 });
 
         Channel channel=bootstrap.connect("127.0.0.1",80).channel();
-
         while(true){
             channel.writeAndFlush(LocalDateTime.now()+" "+ Thread.currentThread().getName() +": hello world!");
             Thread.sleep(2000);
