@@ -166,6 +166,13 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.23</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.7.2</version>
+        </dependency>
+
     </dependencies>
 
 
