@@ -2,17 +2,14 @@ package antlr;
 
 import antlr.antlrcode.hello.HelloLexer;
 import antlr.antlrcode.hello.HelloParser;
-import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-
 public class Test {
-    public static void main(String[] args) throws IOException {
-        ANTLRInputStream input = new ANTLRInputStream(new ByteArrayInputStream("Hello sssasd".getBytes()));
-        HelloLexer lexer = new HelloLexer(input);
+    public static void main(String[] args) {
+
+        HelloLexer lexer = new HelloLexer(CharStreams.fromString("Hello sssasd"));
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
 
