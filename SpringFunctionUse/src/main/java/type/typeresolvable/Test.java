@@ -9,7 +9,7 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         ResolvableType type = ResolvableType.forClass(ArrayList.class);
-        ResolvableType genericsType = ResolvableType.forClassWithGenerics(Generice.class, Generice.class, Integer.class, String.class);
+        ResolvableType genericsType = ResolvableType.forClassWithGenerics(Generics.class, Generics.class, Integer.class, String.class);
         Class<?> classese = type.resolve(Object.class);
         System.out.println(classese);
         System.out.println(List.class.isAssignableFrom(classese));
@@ -17,7 +17,7 @@ public class Test {
     }
 
     @Data
-    class Generice<T, F, C> {
+    class Generics<T, F, C> {
         private T first;
         private F second;
         private C third;
