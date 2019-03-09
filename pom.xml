@@ -16,6 +16,7 @@
         <module>SystemPrinter</module>
         <module>SpringFunctionUse</module>
         <module>SpringBootFunctionUse</module>
+        <module>mybatis-sql-extract</module>
     </modules>
 
     <dependencies>
@@ -26,6 +27,9 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <build>
+    </build>
 
 
 </project>

@@ -1,7 +1,7 @@
 package antlr;
 
-import antlr.antlrcode.hello.HelloLexer;
-import antlr.antlrcode.hello.HelloParser;
+import antlr.antlrcode.HelloLexer;
+import antlr.antlrcode.HelloParser;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
